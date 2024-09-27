@@ -1,0 +1,112 @@
+header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 120vh;
+}
+
+header li {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+
+
+details {
+    margin-left: 10px;
+}
+
+details ul {
+    display: flex;
+}
+
+.timetable {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.timetable li {
+    margin-left: 5vh;
+    margin-bottom: 10px;
+}
+
+.timetable li:first-child {
+    margin-left: -5vh;
+}
+
+.timetable > li {
+    border: 1px solid;
+}
+
+table {
+    width: 30vh;
+}
+
+
+
+#bookList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bookList a {
+    display: flex;
+    flex-direction: column; /* Розташування елементів один під одним */
+    align-items: center; /* Вирівнювання по центру */
+    text-decoration: none;
+    width: 300px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: rgb(109, 175, 197);
+    color: white;
+
+    text-decoration: none;
+
+    margin: 10px;
+    padding: 20px;
+}
+
+#bookList a img {
+    vertical-align: middle; /* вирівнювання з текстом по центру */
+    width: 280px;
+}
+
+#bookList a span {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+@media (orientation: portrait) {
+    .timetable li {
+        margin-left: -5vh;
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        display: flex;
+        list-style-type: none;
+        margin-left: -1vh;
+    }
+
+    header li {
+        margin: 5px;
+    }
+}
